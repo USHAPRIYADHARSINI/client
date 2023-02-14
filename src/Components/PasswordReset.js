@@ -14,7 +14,7 @@ function PasswordReset() {
     const newPassword = {
       password: password,
     };
-    fetch(`http://localhost:5000/users/PasswordReset/${email}/${token}`, {
+    fetch(`https://forgotpasswordserver.onrender.com/users/PasswordReset/${email}/${token}`, {
       method: "POST",
       body: JSON.stringify(newPassword),
       headers: {

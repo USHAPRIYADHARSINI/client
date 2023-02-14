@@ -11,7 +11,7 @@ function ForgotPassword() {
     const checkingUser = {
       email: email,
     };
-    fetch(`http://localhost:5000/users/forgotPassword`, {
+    fetch(`https://forgotpasswordserver.onrender.com/users/forgotPassword`, {
       method: "POST",
       body: JSON.stringify(checkingUser),
       headers: {

@@ -16,7 +16,7 @@ function Signup() {
       email: email,
       password: password,
     };
-    fetch(`http://localhost:5000/users/signup`, {
+    fetch(`https://forgotpasswordserver.onrender.com/users/signup`, {
       method: "POST",
       body: JSON.stringify(newUser),
       headers: {
